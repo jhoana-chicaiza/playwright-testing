@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('debe mostrar un mensaje de error cuando el usuario introduce una contraseña incorrecta', async ({ page }) => {
+test('should display an error message when the user enters an incorrect password', async ({ page }) => {
   await page.goto('https://app.gethapi.app/signin');
   await page.getByPlaceholder('Email').click();
   await page.getByPlaceholder('Email').fill('veni1300@yopmail.com');
